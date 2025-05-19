@@ -2,6 +2,8 @@
 import React, { ReactNode } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
+import { Link } from "react-router-dom";
 
 interface LayoutProps {
   children: ReactNode;
