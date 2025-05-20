@@ -2,6 +2,7 @@
 import React from "react";
 import Layout from "@/components/Layout";
 import { Shield, Award, Truck } from "lucide-react";
+import BrandCarousel from "@/components/BrandCarousel";
 
 const AboutUs = () => {
   return (
@@ -73,6 +74,9 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+      
+      <BrandCarousel />
+      
     </Layout>
   );
 };
