@@ -1,7 +1,8 @@
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { ExternalLink } from "lucide-react";
+import Autoplay from "embla-carousel-autoplay";
 
 // Definição dos dados das marcas
 const carBrands = [
@@ -27,6 +28,19 @@ const carBrands = [
 ];
 
 const BrandCarousel = () => {
+  const [api, setApi] = useState<any>(null);
+  
+  // Plugin de autoplay com 3 segundos de intervalo e loop contínuo
+  const autoplayOptions = {
+    delay: 3000,
+    stopOnInteraction: false,
+    stopOnMouseEnter: true,
+  };
+  
+  const autoplay = React.useRef(
+    Autoplay(autoplayOptions)
+  );
+
   return (
     <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
@@ -40,6 +54,8 @@ const BrandCarousel = () => {
               dragFree: true,
               containScroll: "trimSnaps"
             }}
+            plugins={[autoplay.current]}
+            setApi={setApi}
             className="w-full"
           >
             <CarouselContent className="-ml-4">
