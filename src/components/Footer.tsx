@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-tradedark text-white">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Logo and About */}
           <div>
             <div className="mb-4">
@@ -83,27 +83,6 @@ const Footer = () => {
                 <p className="text-gray-300">contato@tradeimports.com.br</p>
               </li>
             </ul>
-          </div>
-          
-          {/* Newsletter */}
-          <div>
-            <h3 className="text-xl font-semibold mb-4">Newsletter</h3>
-            <p className="text-gray-300 mb-4">
-              Inscreva-se para receber novidades, promoções e informações sobre peças importadas.
-            </p>
-            <form className="space-y-2">
-              <input 
-                type="email" 
-                placeholder="Seu e-mail" 
-                className="w-full px-4 py-2 rounded bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-tradeblue"
-              />
-              <button 
-                type="submit"
-                className="w-full px-4 py-2 bg-tradeblue text-white rounded hover:bg-tradeblue-dark transition-colors"
-              >
-                Inscrever-se
-              </button>
-            </form>
           </div>
         </div>
         
