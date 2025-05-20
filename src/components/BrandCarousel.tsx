@@ -30,9 +30,9 @@ const carBrands = [
 const BrandCarousel = () => {
   const [api, setApi] = useState<any>(null);
   
-  // Plugin de autoplay com 3 segundos de intervalo e loop contínuo
+  // Plugin de autoplay com 2 segundos de intervalo e loop contínuo
   const autoplayOptions = {
-    delay: 3000,
+    delay: 2000,
     stopOnInteraction: false,
     stopOnMouseEnter: true,
   };
