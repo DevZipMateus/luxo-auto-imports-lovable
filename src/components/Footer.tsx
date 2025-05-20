@@ -1,6 +1,7 @@
 
 import React from "react";
 import { Phone, MapPin, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,11 +11,13 @@ const Footer = () => {
           {/* Logo and About */}
           <div>
             <div className="mb-4">
-              <img 
-                src="/lovable-uploads/07606789-617c-474a-984b-5aae0432ac4a.png" 
-                alt="Trade Imports Logo"
-                className="h-16" 
-              />
+              <Link to="/">
+                <img 
+                  src="/lovable-uploads/07606789-617c-474a-984b-5aae0432ac4a.png" 
+                  alt="Trade Imports Logo"
+                  className="h-16" 
+                />
+              </Link>
             </div>
             <p className="text-gray-300 mb-4">
               Especialista em importação de peças para veículos de luxo, com mais de 20 anos de experiência no mercado.
@@ -43,22 +46,22 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4">Links Rápidos</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="text-gray-300 hover:text-tradeblue transition-colors">Home</a>
+                <Link to="/" className="text-gray-300 hover:text-tradeblue transition-colors">Home</Link>
               </li>
               <li>
-                <a href="/sobre" className="text-gray-300 hover:text-tradeblue transition-colors">Sobre Nós</a>
+                <Link to="/sobre-nos" className="text-gray-300 hover:text-tradeblue transition-colors">Sobre Nós</Link>
               </li>
               <li>
-                <a href="/importacao" className="text-gray-300 hover:text-tradeblue transition-colors">Importação</a>
+                <Link to="/importacao" className="text-gray-300 hover:text-tradeblue transition-colors">Importação</Link>
               </li>
               <li>
-                <a href="/produtos" className="text-gray-300 hover:text-tradeblue transition-colors">Produtos</a>
+                <Link to="/produtos" className="text-gray-300 hover:text-tradeblue transition-colors">Produtos</Link>
               </li>
               <li>
-                <a href="/fornecedores" className="text-gray-300 hover:text-tradeblue transition-colors">Fornecedores</a>
+                <Link to="/fornecedores" className="text-gray-300 hover:text-tradeblue transition-colors">Fornecedores</Link>
               </li>
               <li>
-                <a href="/contato" className="text-gray-300 hover:text-tradeblue transition-colors">Contato</a>
+                <Link to="/contato" className="text-gray-300 hover:text-tradeblue transition-colors">Contato</Link>
               </li>
             </ul>
           </div>

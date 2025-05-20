@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Menu, Phone, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,13 +13,13 @@ const Header = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="/" className="block">
+            <Link to="/" className="block">
               <img 
                 src="/lovable-uploads/07606789-617c-474a-984b-5aae0432ac4a.png"
                 alt="Trade Imports Logo" 
                 className="h-14" 
               />
-            </a>
+            </Link>
           </div>
           
           {/* Contact Info - Hidden on mobile */}
@@ -45,14 +46,14 @@ const Header = () => {
           
           {/* Desktop Navigation - Hidden on mobile */}
           <nav className="hidden lg:flex items-center space-x-6">
-            <a href="/" className="nav-link">Home</a>
-            <a href="/sobre" className="nav-link">Sobre Nós</a>
-            <a href="/importacao" className="nav-link">Importação</a>
-            <a href="/produtos" className="nav-link">Produtos</a>
-            <a href="/fornecedores" className="nav-link">Fornecedores</a>
-            <a href="/clientes" className="nav-link">Clientes</a>
-            <a href="/catalogos" className="nav-link">Catálogos</a>
-            <a href="/contato" className="nav-link">Contato</a>
+            <Link to="/" className="nav-link">Home</Link>
+            <Link to="/sobre-nos" className="nav-link">Sobre Nós</Link>
+            <Link to="/importacao" className="nav-link">Importação</Link>
+            <Link to="/produtos" className="nav-link">Produtos</Link>
+            <Link to="/fornecedores" className="nav-link">Fornecedores</Link>
+            <Link to="/clientes" className="nav-link">Clientes</Link>
+            <Link to="/catalogos" className="nav-link">Catálogos</Link>
+            <Link to="/contato" className="nav-link">Contato</Link>
             <Button className="btn-primary">Loja Virtual</Button>
           </nav>
           
@@ -70,14 +71,14 @@ const Header = () => {
         {isMenuOpen && (
           <div className="lg:hidden py-4 border-t">
             <nav className="flex flex-col space-y-4">
-              <a href="/" className="nav-link">Home</a>
-              <a href="/sobre" className="nav-link">Sobre Nós</a>
-              <a href="/importacao" className="nav-link">Importação</a>
-              <a href="/produtos" className="nav-link">Produtos</a>
-              <a href="/fornecedores" className="nav-link">Fornecedores</a>
-              <a href="/clientes" className="nav-link">Clientes</a>
-              <a href="/catalogos" className="nav-link">Catálogos</a>
-              <a href="/contato" className="nav-link">Contato</a>
+              <Link to="/" className="nav-link">Home</Link>
+              <Link to="/sobre-nos" className="nav-link">Sobre Nós</Link>
+              <Link to="/importacao" className="nav-link">Importação</Link>
+              <Link to="/produtos" className="nav-link">Produtos</Link>
+              <Link to="/fornecedores" className="nav-link">Fornecedores</Link>
+              <Link to="/clientes" className="nav-link">Clientes</Link>
+              <Link to="/catalogos" className="nav-link">Catálogos</Link>
+              <Link to="/contato" className="nav-link">Contato</Link>
               
               <div className="flex flex-col space-y-3 pt-2">
                 <Button className="btn-primary">Loja Virtual</Button>
