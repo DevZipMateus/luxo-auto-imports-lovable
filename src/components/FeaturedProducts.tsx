@@ -7,31 +7,35 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 const products = [
   {
     id: 1,
-    name: "Pastilhas de Freio Dianteiro Porsche",
+    name: "Válvula Termostática do Mini Cooper",
     price: 550.55,
-    image: "https://images.unsplash.com/photo-1610844884768-490b92c1bdc0?q=80&w=500&auto=format&fit=crop",
-    brand: "Porsche",
+    image: "/lovable-uploads/produto1.jpg",
+    brand: "Mini Cooper",
+    link: "https://www.tradeimports.com.br/loja2/valvula-termostatica-do-mini-cooper"
   },
   {
     id: 2,
-    name: "Bomba de Combustível Mercedes-Benz",
+    name: "Filtro de Óleo Jaguar Land Rover V8",
     price: 1250.90,
-    image: "https://images.unsplash.com/photo-1489824904134-891ab64532f1?q=80&w=500&auto=format&fit=crop",
-    brand: "Mercedes-Benz",
+    image: "/lovable-uploads/produto2.jpg",
+    brand: "Jaguar",
+    link: "https://www.tradeimports.com.br/loja2/index.php?route=product/product&product_id=87"
   },
   {
     id: 3,
-    name: "Hélice da Ventoinha Land Rover",
+    name: "Farol Mercedes AMG C43 C45 Lado Esquerdo",
     price: 890.75,
-    image: "https://images.unsplash.com/photo-1626467080295-c31b244acbe3?q=80&w=500&auto=format&fit=crop",
-    brand: "Land Rover",
+    image: "/lovable-uploads/produto3.jpg",
+    brand: "Mercedes-Benz",
+    link: "https://www.tradeimports.com.br/loja2/index.php?route=product/product&product_id=90"
   },
   {
     id: 4,
-    name: "Faróis Dianteiros LED/Xenon BMW",
+    name: "Cubo Da Roda Dianteira da BMW",
     price: 3200.00,
-    image: "https://images.unsplash.com/photo-1579541591970-e5de6e1937a3?q=80&w=500&auto=format&fit=crop",
+    image: "/lovable-uploads/produto4.jpg",
     brand: "BMW",
+    link: "https://www.tradeimports.com.br/loja2/index.php?route=product/product&product_id=70"
   },
 ];
 
@@ -66,10 +70,17 @@ const FeaturedProducts = () => {
               </CardContent>
               
               <CardFooter className="flex justify-between">
-                <Button variant="outline" className="text-tradeblue border-tradeblue hover:bg-tradeblue/5">
+                <Button 
+                  variant="outline" 
+                  className="text-tradeblue border-tradeblue hover:bg-tradeblue/5"
+                  onClick={() => window.open(product.link, '_blank')}
+                >
                   Detalhes
                 </Button>
-                <Button className="bg-tradered hover:bg-tradered-dark text-white">
+                <Button 
+                  className="bg-tradered hover:bg-tradered-dark text-white"
+                  onClick={() => window.open(product.link, '_blank')}
+                >
                   Comprar
                 </Button>
               </CardFooter>
@@ -78,7 +89,12 @@ const FeaturedProducts = () => {
         </div>
         
         <div className="mt-12 text-center">
-          <Button className="btn-primary text-lg">Ver Todos os Produtos</Button>
+          <Button 
+            className="btn-primary text-lg"
+            onClick={() => window.open('https://www.tradeimports.com.br/loja2/', '_blank')}
+          >
+            Ver Todos os Produtos
+          </Button>
         </div>
         
         <div className="mt-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-4">
