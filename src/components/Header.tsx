@@ -7,6 +7,13 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className="sticky top-0 z-50 bg-usawhite shadow-lg border-b-2 border-usared">
       <div className="container mx-auto px-4 max-w-full">
@@ -49,8 +56,12 @@ const Header = () => {
             <Link to="/" className="nav-link">Home</Link>
             <Link to="/sobre-nos" className="nav-link">Sobre Nós</Link>
             <Link to="/importacao" className="nav-link">Importação</Link>
-            <Link to="/produtos" className="nav-link">Produtos</Link>
-            <Link to="/fornecedores" className="nav-link">Fornecedores</Link>
+            <button 
+              onClick={() => scrollToSection('featured-products')} 
+              className="nav-link bg-transparent border-none cursor-pointer"
+            >
+              Produtos
+            </button>
             <Link to="/clientes" className="nav-link">Clientes</Link>
             <Link to="/catalogos" className="nav-link">Catálogos</Link>
             <Link to="/contato" className="nav-link">Contato</Link>
@@ -80,8 +91,15 @@ const Header = () => {
               <Link to="/" className="nav-link">Home</Link>
               <Link to="/sobre-nos" className="nav-link">Sobre Nós</Link>
               <Link to="/importacao" className="nav-link">Importação</Link>
-              <Link to="/produtos" className="nav-link">Produtos</Link>
-              <Link to="/fornecedores" className="nav-link">Fornecedores</Link>
+              <button 
+                onClick={() => {
+                  scrollToSection('featured-products');
+                  setIsMenuOpen(false);
+                }} 
+                className="nav-link bg-transparent border-none cursor-pointer text-left"
+              >
+                Produtos
+              </button>
               <Link to="/clientes" className="nav-link">Clientes</Link>
               <Link to="/catalogos" className="nav-link">Catálogos</Link>
               <Link to="/contato" className="nav-link">Contato</Link>
