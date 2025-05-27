@@ -37,7 +37,7 @@ const Banner = () => {
           <div
             key={image}
             className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
-              index === currentImageIndex ? 'opacity-40' : 'opacity-0'
+              index === currentImageIndex ? 'opacity-30' : 'opacity-0'
             }`}
             style={{ backgroundImage: `url(${image})` }}
           />
