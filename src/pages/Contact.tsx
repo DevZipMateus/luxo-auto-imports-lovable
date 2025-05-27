@@ -57,9 +57,9 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold text-tradedark">Endereço</h3>
                       <p className="text-gray-600">
-                        Rua Madre Cabrini, 140 - Vila Bertioga<br />
-                        São Paulo, SP - CEP: 03187-000<br />
-                        Brasil
+                        Rua. Adelino Cardana, 293 Andar 22º - Und 2211<br />
+                        Bethaville I, Barueri - SP<br />
+                        CEP: 06401-147, Brasil
                       </p>
                     </div>
                   </div>
@@ -112,7 +112,7 @@ const Contact = () => {
                 </div>
                 <div className="w-full h-96">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7833333333!2d-46.5566667!3d-23.5566667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5f0a0a0a0a0a%3A0xa0a0a0a0a0a0a0a0!2sRua%20Madre%20Cabrini%2C%20140%20-%20Vila%20Bertioga%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003187-000!5e0!3m2!1spt-BR!2sbr!4v1640000000000!5m2!1spt-BR!2sbr"
+                    src="https://maps.app.goo.gl/4YWphV2ctEbbvGk19"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
