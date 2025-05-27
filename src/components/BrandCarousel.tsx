@@ -1,30 +1,38 @@
-
 import React, { useEffect, useState } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { ExternalLink } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay";
 
-// Definição dos dados das marcas
+// Definição dos dados das marcas com imagens locais
 const carBrands = [
-  { name: "Aston Martin", url: "https://www.astonmartin.com", logo: "https://seeklogo.com/images/A/aston-martin-logo-1A414F2929-seeklogo.com.png" },
-  { name: "Audi", url: "https://www.audi.com", logo: "https://seeklogo.com/images/A/Audi-logo-6AA8473FA9-seeklogo.com.png" },
-  { name: "Bentley", url: "https://www.bentleymotors.com", logo: "https://seeklogo.com/images/B/bentley-logo-162CCB5DE3-seeklogo.com.png" },
-  { name: "BMW", url: "https://www.bmw.com", logo: "https://seeklogo.com/images/B/bmw-logo-248C3D90E6-seeklogo.com.png" },
-  { name: "Cadillac", url: "https://www.cadillac.com", logo: "https://seeklogo.com/images/C/cadillac-logo-735900F053-seeklogo.com.png" },
-  { name: "Chrysler", url: "https://www.chrysler.com", logo: "https://seeklogo.com/images/C/Chrysler-logo-50290F1954-seeklogo.com.png" },
-  { name: "Dodge", url: "https://www.dodge.com", logo: "https://seeklogo.com/images/D/dodge-logo-5AC03DEF72-seeklogo.com.png" },
-  { name: "Ferrari", url: "https://www.ferrari.com", logo: "https://seeklogo.com/images/F/ferrari-logo-7935CF173C-seeklogo.com.png" },
-  { name: "Hummer", url: "https://www.gmc.com/electric/hummer-ev", logo: "https://seeklogo.com/images/H/Hummer-logo-5CB8E9DB27-seeklogo.com.png" },
-  { name: "Infiniti", url: "https://www.infiniti.com", logo: "https://seeklogo.com/images/I/infiniti-logo-63AE3F53E5-seeklogo.com.png" },
-  { name: "Jaguar", url: "https://www.jaguar.com", logo: "https://seeklogo.com/images/J/jaguar-logo-389704DC5C-seeklogo.com.png" },
-  { name: "Lamborghini", url: "https://www.lamborghini.com", logo: "https://seeklogo.com/images/L/Lamborghini-logo-8B3C97B67F-seeklogo.com.png" },
-  { name: "Land Rover", url: "https://www.landrover.com", logo: "https://seeklogo.com/images/L/land-rover-logo-232D4B9931-seeklogo.com.png" },
-  { name: "Lexus", url: "https://www.lexus.com", logo: "https://seeklogo.com/images/L/lexus-logo-3B9C2B3909-seeklogo.com.png" },
-  { name: "Lotus", url: "https://www.lotuscars.com", logo: "https://seeklogo.com/images/L/lotus-cars-logo-25DEF9179B-seeklogo.com.png" },
-  { name: "Maserati", url: "https://www.maserati.com", logo: "https://seeklogo.com/images/M/maserati-logo-4D5305AE10-seeklogo.com.png" },
-  { name: "Mercedes-Benz", url: "https://www.mercedes-benz.com", logo: "https://seeklogo.com/images/M/mercedes-benz-logo-248AAF2557-seeklogo.com.png" },
-  { name: "Mini Cooper", url: "https://www.mini.com", logo: "https://seeklogo.com/images/M/mini-cooper-logo-EFA75F93F8-seeklogo.com.png" },
-  { name: "Porsche", url: "https://www.porsche.com", logo: "https://seeklogo.com/images/P/Porsche-logo-D7FB8DB4C3-seeklogo.com.png" },
+  { name: "Aston Martin", url: "https://www.astonmartin.com", logo: "/lovable-uploads/marcas/aston-.png" },
+  { name: "Audi", url: "https://www.audi.com", logo: "/lovable-uploads/marcas/audi.png" },
+  { name: "Bentley", url: "https://www.bentleymotors.com", logo: "/lovable-uploads/marcas/bentley.jpg" },
+  { name: "BMW", url: "https://www.bmw.com", logo: "/lovable-uploads/marcas/bmw.png" },
+  { name: "Bugatti", url: "https://www.bugatti.com", logo: "/lovable-uploads/marcas/bugatti.png" },
+  { name: "Cadillac", url: "https://www.cadillac.com", logo: "/lovable-uploads/marcas/cadillac.jpg" },
+  { name: "Chrysler", url: "https://www.chrysler.com", logo: "/lovable-uploads/marcas/chrysler.jpg" },
+  { name: "Corvette", url: "https://www.chevrolet.com/performance/corvette", logo: "/lovable-uploads/marcas/corvete.jpg" },
+  { name: "Dodge", url: "https://www.dodge.com", logo: "/lovable-uploads/marcas/dodge.png" },
+  { name: "Ferrari", url: "https://www.ferrari.com", logo: "/lovable-uploads/marcas/ferrari.png" },
+  { name: "GMC", url: "https://www.gmc.com", logo: "/lovable-uploads/marcas/gmc.jpg" },
+  { name: "Hella", url: "https://www.hella.com", logo: "/lovable-uploads/marcas/hella.png" },
+  { name: "Hummer", url: "https://www.gmc.com/electric/hummer-ev", logo: "/lovable-uploads/marcas/hummer.png" },
+  { name: "Infiniti", url: "https://www.infiniti.com", logo: "/lovable-uploads/marcas/infiniti.png" },
+  { name: "Jeep", url: "https://www.jeep.com", logo: "/lovable-uploads/marcas/jeep.png" },
+  { name: "Lamborghini", url: "https://www.lamborghini.com", logo: "/lovable-uploads/marcas/lamborghini.jpg" },
+  { name: "Land Rover", url: "https://www.landrover.com", logo: "/lovable-uploads/marcas/landrover.jpg" },
+  { name: "Lexus", url: "https://www.lexus.com", logo: "/lovable-uploads/marcas/lexus.jpg" },
+  { name: "McLaren", url: "https://www.mclaren.com", logo: "/lovable-uploads/marcas/maclaren.png" },
+  { name: "Maserati", url: "https://www.maserati.com", logo: "/lovable-uploads/marcas/maserati.png" },
+  { name: "Mercedes-Benz", url: "https://www.mercedes-benz.com", logo: "/lovable-uploads/marcas/mercedes.jpg" },
+  { name: "Mustang", url: "https://www.ford.com/cars/mustang", logo: "/lovable-uploads/marcas/mustang.jpg" },
+  { name: "Pontiac", url: "https://www.gm.com", logo: "/lovable-uploads/marcas/pontic.png" },
+  { name: "Porsche", url: "https://www.porsche.com", logo: "/lovable-uploads/marcas/porsche.jpg" },
+  { name: "Volkswagen", url: "https://www.volkswagen.com", logo: "/lovable-uploads/marcas/volks.jpg" },
+  { name: "Volvo", url: "https://www.volvo.com", logo: "/lovable-uploads/marcas/volvo.jpg" },
+  { name: "Wunder", url: "https://www.wunder.com", logo: "/lovable-uploads/marcas/wunder.png" },
+  { name: "Aircraft", url: "https://www.aircraft.com", logo: "/lovable-uploads/marcas/aircraft.jpg" },
 ];
 
 const BrandCarousel = () => {
