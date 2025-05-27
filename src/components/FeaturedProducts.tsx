@@ -8,7 +8,7 @@ const products = [
   {
     id: 1,
     name: "Válvula Termostática do Mini Cooper",
-    price: 550.55,
+    price: 999.99,
     image: "/lovable-uploads/produto1.jpg",
     brand: "Mini Cooper",
     link: "https://www.tradeimports.com.br/loja2/valvula-termostatica-do-mini-cooper"
@@ -16,7 +16,7 @@ const products = [
   {
     id: 2,
     name: "Filtro de Óleo Jaguar Land Rover V8",
-    price: 1250.90,
+    price: 110.99,
     image: "/lovable-uploads/produto2.jpg",
     brand: "Jaguar",
     link: "https://www.tradeimports.com.br/loja2/index.php?route=product/product&product_id=87"
@@ -24,7 +24,7 @@ const products = [
   {
     id: 3,
     name: "Farol Mercedes AMG C43 C45 Lado Esquerdo",
-    price: 890.75,
+    price: 8.499,
     image: "/lovable-uploads/produto3.jpg",
     brand: "Mercedes-Benz",
     link: "https://www.tradeimports.com.br/loja2/index.php?route=product/product&product_id=90"
@@ -32,7 +32,7 @@ const products = [
   {
     id: 4,
     name: "Cubo Da Roda Dianteira da BMW",
-    price: 3200.00,
+    price: 899.99,
     image: "/lovable-uploads/produto4.jpg",
     brand: "BMW",
     link: "https://www.tradeimports.com.br/loja2/index.php?route=product/product&product_id=70"
