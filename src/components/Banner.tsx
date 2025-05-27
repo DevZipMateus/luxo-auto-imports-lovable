@@ -22,6 +22,13 @@ const Banner = () => {
     return () => clearInterval(interval);
   }, [backgroundImages.length]);
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative bg-gradient-to-r from-usanavy via-usanavy to-usablue-dark overflow-hidden">
       {/* Background Images with Rotation */}
@@ -52,8 +59,16 @@ const Banner = () => {
             Há mais de 20 anos fornecendo peças de alta qualidade para as principais marcas automotivas premium do mercado.
           </p>
           <div className="flex flex-col sm:flex-row flex-wrap gap-4">
-            <Button className="btn-primary text-base sm:text-lg">Saiba Mais</Button>
-            <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 transition-colors text-base sm:text-lg px-6 py-3">
+            <Button 
+              className="btn-primary text-base sm:text-lg"
+              onClick={() => scrollToSection('our-history')}
+            >
+              Saiba Mais
+            </Button>
+            <Button 
+              className="bg-transparent border-2 border-white text-white hover:bg-white/10 transition-colors text-base sm:text-lg px-6 py-3"
+              onClick={() => scrollToSection('featured-products')}
+            >
               Confira Nossos Produtos
             </Button>
             <a 
@@ -68,9 +83,13 @@ const Banner = () => {
           </div>
           
           <div className="mt-12 flex flex-wrap gap-4 lg:gap-6">
-            {/* Luxury car brand logos */}
+            {/* Expanded luxury car brand logos */}
             <div className="flex flex-wrap gap-3 lg:gap-4">
-              {['BMW', 'Mercedes', 'Porsche', 'Audi', 'Land Rover'].map((brand) => (
+              {[
+                'BMW', 'Mercedes', 'Porsche', 'Audi', 'Land Rover',
+                'Ferrari', 'Lamborghini', 'Maserati', 'Bentley', 'Jaguar',
+                'McLaren', 'Aston Martin', 'Bugatti', 'Rolls-Royce'
+              ].map((brand) => (
                 <div 
                   key={brand} 
                   className="bg-white/10 backdrop-blur-sm px-3 py-2 lg:px-4 lg:py-2 rounded-lg text-white font-medium text-sm transition-transform hover:scale-105"

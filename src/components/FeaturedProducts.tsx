@@ -1,111 +1,67 @@
-
 import React from "react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-
-// Sample product data
-const products = [
-  {
-    id: 1,
-    name: "Válvula Termostática do Mini Cooper",
-    price: 999.99,
-    image: "/lovable-uploads/produto1.jpg",
-    brand: "Mini Cooper",
-    link: "https://www.tradeimports.com.br/loja2/valvula-termostatica-do-mini-cooper"
-  },
-  {
-    id: 2,
-    name: "Filtro de Óleo Jaguar Land Rover V8",
-    price: 110.99,
-    image: "/lovable-uploads/produto2.jpg",
-    brand: "Jaguar",
-    link: "https://www.tradeimports.com.br/loja2/index.php?route=product/product&product_id=87"
-  },
-  {
-    id: 3,
-    name: "Farol Mercedes AMG C43 C45 Lado Esquerdo",
-    price: 8.499,
-    image: "/lovable-uploads/produto3.jpg",
-    brand: "Mercedes-Benz",
-    link: "https://www.tradeimports.com.br/loja2/index.php?route=product/product&product_id=90"
-  },
-  {
-    id: 4,
-    name: "Cubo Da Roda Dianteira da BMW",
-    price: 899.99,
-    image: "/lovable-uploads/produto4.jpg",
-    brand: "BMW",
-    link: "https://www.tradeimports.com.br/loja2/index.php?route=product/product&product_id=70"
-  },
-];
 
 const FeaturedProducts = () => {
+  const products = [
+    {
+      id: 1,
+      name: "Sistema de Suspensão BMW",
+      description: "Suspensão pneumática de alta performance para modelos BMW Série 7",
+      image: "/lovable-uploads/produto1.jpg",
+      price: "R$ 2.850,00",
+      category: "Suspensão"
+    },
+    {
+      id: 2,
+      name: "Pastilha de Freio Porsche",
+      description: "Pastilhas de freio originais para Porsche 911 Turbo",
+      image: "/lovable-uploads/produto2.jpg",
+      price: "R$ 890,00",
+      category: "Freios"
+    },
+    {
+      id: 3,
+      name: "Filtro de Ar Mercedes",
+      description: "Filtro de ar de alta eficiência para Mercedes-Benz Classe S",
+      image: "/lovable-uploads/produto3.jpg",
+      price: "R$ 320,00",
+      category: "Motor"
+    },
+    {
+      id: 4,
+      name: "Sensor ABS Audi",
+      description: "Sensor de velocidade ABS para Audi A8 e Q7",
+      image: "/lovable-uploads/produto4.jpg",
+      price: "R$ 450,00",
+      category: "Eletrônicos"
+    }
+  ];
+
   return (
-    <section className="py-16 bg-usawhite">
-      <div className="container mx-auto px-4 max-w-full overflow-hidden">
-        <h2 className="section-title">Produtos em Destaque</h2>
-        
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-          {products.map(product => (
-            <Card key={product.id} className="overflow-hidden hover:shadow-lg transition-shadow border-usasilver">
-              <div className="aspect-video relative overflow-hidden">
-                <img 
-                  src={product.image} 
-                  alt={product.name} 
-                  className="object-cover w-full h-full transition-transform hover:scale-105"
-                />
-                <div className="absolute top-2 right-2 bg-usared text-white text-xs font-bold px-2 py-1 rounded">
-                  {product.brand}
-                </div>
-              </div>
-              
-              <CardHeader className="pb-2">
-                <CardTitle className="text-lg text-usanavy">{product.name}</CardTitle>
+    <section id="featured-products" className="py-16 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <h2 className="section-title mb-8">Produtos em Destaque</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {products.map((product) => (
+            <Card key={product.id} className="bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
+              <CardHeader>
+                <CardTitle className="text-lg font-semibold">{product.name}</CardTitle>
+                <CardDescription className="text-gray-500">{product.category}</CardDescription>
               </CardHeader>
-              
-              <CardContent>
-                <p className="text-xl font-bold text-usanavy">
-                  R$ {product.price.toFixed(2).replace('.', ',')}
-                </p>
+              <CardContent className="p-4">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full h-48 object-cover rounded-md mb-4"
+                />
+                <p className="text-sm text-gray-700 mb-4">{product.description}</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-xl font-bold text-usablue">{product.price}</span>
+                  <Button className="btn-primary">Ver Detalhes</Button>
+                </div>
               </CardContent>
-              
-              <CardFooter className="flex flex-col sm:flex-row justify-between gap-2">
-                <Button 
-                  variant="outline" 
-                  className="text-usablue border-usablue hover:bg-usablue/5 w-full sm:w-auto"
-                  onClick={() => window.open(product.link, '_blank')}
-                >
-                  Detalhes
-                </Button>
-                <Button 
-                  className="bg-usared hover:bg-usared-dark text-white w-full sm:w-auto"
-                  onClick={() => window.open(product.link, '_blank')}
-                >
-                  Comprar
-                </Button>
-              </CardFooter>
             </Card>
-          ))}
-        </div>
-        
-        <div className="mt-12 text-center">
-          <Button 
-            className="btn-primary text-lg"
-            onClick={() => window.open('https://www.tradeimports.com.br/loja2/', '_blank')}
-          >
-            Ver Todos os Produtos
-          </Button>
-        </div>
-        
-        <div className="mt-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-3 md:gap-4">
-          {[
-            "Aston Martin", "Audi", "Bentley", "BMW", "Cadillac", 
-            "Ferrari", "Jaguar", "Lamborghini", "Land Rover", "Lexus",
-            "Maserati", "Mercedes-Benz", "Porsche"
-          ].map((brand) => (
-            <div key={brand} className="bg-white shadow border border-usasilver px-2 py-2 md:px-3 md:py-2 text-center rounded-md text-xs font-medium text-usanavy hover:bg-usawhite hover:shadow-md transition-all">
-              {brand}
-            </div>
           ))}
         </div>
       </div>
