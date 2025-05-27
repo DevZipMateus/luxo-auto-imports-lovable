@@ -53,19 +53,33 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-        // Trade Imports custom colors
+        // American themed colors
+        usablue: {
+          light: '#6495ED',
+          DEFAULT: '#1E3A8A',
+          dark: '#1E40AF',
+        },
+        usared: {
+          light: '#DC2626',
+          DEFAULT: '#B91C1C',
+          dark: '#991B1B',
+        },
+        usawhite: '#F8FAFC',
+        usanavy: '#1E293B',
+        usasilver: '#E2E8F0',
+        // Legacy colors for backward compatibility
         tradeblue: {
-          light: '#5ecbff',
-          DEFAULT: '#2fa7f2',
-          dark: '#0063a1',
+          light: '#6495ED',
+          DEFAULT: '#1E3A8A',
+          dark: '#1E40AF',
         },
         tradered: {
-          light: '#ff5656',
-          DEFAULT: '#e42328',
-          dark: '#b20000',
+          light: '#DC2626',
+          DEFAULT: '#B91C1C',
+          dark: '#991B1B',
         },
-        tradedark: '#1A1F2C',
-        tradelight: '#f5f5f7',
+        tradedark: '#1E293B',
+        tradelight: '#F8FAFC',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

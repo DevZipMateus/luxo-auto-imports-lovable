@@ -41,44 +41,44 @@ const products = [
 
 const FeaturedProducts = () => {
   return (
-    <section className="py-16 bg-tradelight">
-      <div className="container mx-auto px-4">
+    <section className="py-16 bg-usawhite">
+      <div className="container mx-auto px-4 max-w-full overflow-hidden">
         <h2 className="section-title">Produtos em Destaque</h2>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {products.map(product => (
-            <Card key={product.id} className="overflow-hidden hover:shadow-lg transition-shadow">
+            <Card key={product.id} className="overflow-hidden hover:shadow-lg transition-shadow border-usasilver">
               <div className="aspect-video relative overflow-hidden">
                 <img 
                   src={product.image} 
                   alt={product.name} 
                   className="object-cover w-full h-full transition-transform hover:scale-105"
                 />
-                <div className="absolute top-2 right-2 bg-tradered text-white text-xs font-bold px-2 py-1 rounded">
+                <div className="absolute top-2 right-2 bg-usared text-white text-xs font-bold px-2 py-1 rounded">
                   {product.brand}
                 </div>
               </div>
               
               <CardHeader className="pb-2">
-                <CardTitle className="text-lg">{product.name}</CardTitle>
+                <CardTitle className="text-lg text-usanavy">{product.name}</CardTitle>
               </CardHeader>
               
               <CardContent>
-                <p className="text-xl font-bold text-tradedark">
+                <p className="text-xl font-bold text-usanavy">
                   R$ {product.price.toFixed(2).replace('.', ',')}
                 </p>
               </CardContent>
               
-              <CardFooter className="flex justify-between">
+              <CardFooter className="flex flex-col sm:flex-row justify-between gap-2">
                 <Button 
                   variant="outline" 
-                  className="text-tradeblue border-tradeblue hover:bg-tradeblue/5"
+                  className="text-usablue border-usablue hover:bg-usablue/5 w-full sm:w-auto"
                   onClick={() => window.open(product.link, '_blank')}
                 >
                   Detalhes
                 </Button>
                 <Button 
-                  className="bg-tradered hover:bg-tradered-dark text-white"
+                  className="bg-usared hover:bg-usared-dark text-white w-full sm:w-auto"
                   onClick={() => window.open(product.link, '_blank')}
                 >
                   Comprar
@@ -97,13 +97,13 @@ const FeaturedProducts = () => {
           </Button>
         </div>
         
-        <div className="mt-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-4">
+        <div className="mt-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-3 md:gap-4">
           {[
             "Aston Martin", "Audi", "Bentley", "BMW", "Cadillac", 
             "Ferrari", "Jaguar", "Lamborghini", "Land Rover", "Lexus",
             "Maserati", "Mercedes-Benz", "Porsche"
           ].map((brand) => (
-            <div key={brand} className="bg-white shadow px-3 py-2 text-center rounded-md text-xs font-medium text-gray-700">
+            <div key={brand} className="bg-white shadow border border-usasilver px-2 py-2 md:px-3 md:py-2 text-center rounded-md text-xs font-medium text-usanavy hover:bg-usawhite hover:shadow-md transition-all">
               {brand}
             </div>
           ))}

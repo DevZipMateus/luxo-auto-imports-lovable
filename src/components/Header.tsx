@@ -8,8 +8,8 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-md">
-      <div className="container mx-auto px-4">
+    <header className="sticky top-0 z-50 bg-usawhite shadow-lg border-b-2 border-usared">
+      <div className="container mx-auto px-4 max-w-full">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -17,16 +17,16 @@ const Header = () => {
               <img 
                 src="/lovable-uploads/07606789-617c-474a-984b-5aae0432ac4a.png"
                 alt="Trade Imports Logo" 
-                className="h-14" 
+                className="h-12 md:h-14" 
               />
             </Link>
           </div>
           
           {/* Contact Info - Hidden on mobile */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-4 lg:gap-6">
             <div className="flex items-center gap-2">
-              <Phone size={18} className="text-tradeblue" />
-              <a href="tel:+551141986237" className="text-sm hover:text-tradeblue transition-colors">
+              <Phone size={18} className="text-usablue" />
+              <a href="tel:+551141986237" className="text-sm hover:text-usablue transition-colors">
                 +55 (11) 4198-6237
               </a>
             </div>
@@ -34,7 +34,7 @@ const Header = () => {
               href="https://wa.me/5511983034915" 
               target="_blank"
               rel="noopener noreferrer" 
-              className="flex items-center gap-2 bg-green-500 text-white px-3 py-1 rounded-full hover:bg-green-600 transition-colors"
+              className="flex items-center gap-2 bg-green-500 text-white px-3 py-1 rounded-full hover:bg-green-600 transition-colors text-sm"
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
@@ -45,7 +45,7 @@ const Header = () => {
           </div>
           
           {/* Desktop Navigation - Hidden on mobile */}
-          <nav className="hidden lg:flex items-center space-x-6">
+          <nav className="hidden lg:flex items-center space-x-4 xl:space-x-6">
             <Link to="/" className="nav-link">Home</Link>
             <Link to="/sobre-nos" className="nav-link">Sobre Nós</Link>
             <Link to="/importacao" className="nav-link">Importação</Link>
@@ -59,7 +59,7 @@ const Header = () => {
               target="_blank" 
               rel="noopener noreferrer"
             >
-              <Button className="btn-primary">Loja Virtual</Button>
+              <Button className="btn-primary text-sm">Loja Virtual</Button>
             </a>
           </nav>
           
@@ -75,7 +75,7 @@ const Header = () => {
         
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden py-4 border-t">
+          <div className="lg:hidden py-4 border-t border-usasilver">
             <nav className="flex flex-col space-y-4">
               <Link to="/" className="nav-link">Home</Link>
               <Link to="/sobre-nos" className="nav-link">Sobre Nós</Link>
@@ -96,8 +96,8 @@ const Header = () => {
                 </a>
                 
                 <div className="flex items-center gap-2 pt-2">
-                  <Phone size={18} className="text-tradeblue" />
-                  <a href="tel:+551141986237" className="text-sm hover:text-tradeblue transition-colors">
+                  <Phone size={18} className="text-usablue" />
+                  <a href="tel:+551141986237" className="text-sm hover:text-usablue transition-colors">
                     +55 (11) 4198-6237
                   </a>
                 </div>

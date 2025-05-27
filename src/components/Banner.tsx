@@ -17,13 +17,13 @@ const Banner = () => {
       setCurrentImageIndex((prevIndex) => 
         (prevIndex + 1) % backgroundImages.length
       );
-    }, 5000); // Muda a imagem a cada 5 segundos
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [backgroundImages.length]);
 
   return (
-    <section className="relative bg-gradient-to-r from-tradedark via-tradedark to-black overflow-hidden">
+    <section className="relative bg-gradient-to-r from-usanavy via-usanavy to-usablue-dark overflow-hidden">
       {/* Background Images with Rotation */}
       <div className="absolute inset-0">
         {backgroundImages.map((image, index) => (
@@ -35,25 +35,25 @@ const Banner = () => {
             style={{ backgroundImage: `url(${image})` }}
           />
         ))}
-        <div className="absolute inset-0 bg-gradient-to-r from-tradedark/90 via-tradedark/80 to-black/70 z-10"></div>
-        {/* Background effect with car part silhouettes */}
+        <div className="absolute inset-0 bg-gradient-to-r from-usanavy/90 via-usanavy/80 to-usablue/70 z-10"></div>
+        {/* Background effect with patriotic elements */}
         <div className="absolute inset-0 opacity-20 z-0">
-          <div className="absolute -right-16 top-20 w-80 h-80 rounded-full bg-tradered/30 blur-3xl animate-float"></div>
-          <div className="absolute left-40 bottom-20 w-60 h-60 rounded-full bg-tradeblue/30 blur-3xl animate-float" style={{ animationDelay: "2s" }}></div>
+          <div className="absolute -right-16 top-20 w-80 h-80 rounded-full bg-usared/30 blur-3xl animate-float"></div>
+          <div className="absolute left-40 bottom-20 w-60 h-60 rounded-full bg-usablue/30 blur-3xl animate-float" style={{ animationDelay: "2s" }}></div>
         </div>
       </div>
       
-      <div className="container mx-auto px-4 py-16 md:py-24 lg:py-32 relative z-20">
-        <div className="max-w-3xl">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+      <div className="container mx-auto px-4 py-16 md:py-24 lg:py-32 relative z-20 max-w-full">
+        <div className="max-w-4xl">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight">
             Especialista em Peças para Veículos de Luxo Importados
           </h1>
-          <p className="text-lg text-gray-200 mb-8">
+          <p className="text-lg md:text-xl text-usasilver mb-8 max-w-3xl">
             Há mais de 20 anos fornecendo peças de alta qualidade para as principais marcas automotivas premium do mercado.
           </p>
-          <div className="flex flex-wrap gap-4">
-            <Button className="btn-primary">Saiba Mais</Button>
-            <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 transition-colors">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-4">
+            <Button className="btn-primary text-base sm:text-lg">Saiba Mais</Button>
+            <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 transition-colors text-base sm:text-lg px-6 py-3">
               Confira Nossos Produtos
             </Button>
             <a 
@@ -61,19 +61,19 @@ const Banner = () => {
               target="_blank" 
               rel="noopener noreferrer"
             >
-              <Button className="bg-tradeblue text-white hover:bg-tradeblue/90 transition-colors">
+              <Button className="bg-usared text-white hover:bg-usared-dark transition-colors text-base sm:text-lg px-6 py-3">
                 Acesse Nossa Loja
               </Button>
             </a>
           </div>
           
-          <div className="mt-12 flex flex-wrap gap-6">
+          <div className="mt-12 flex flex-wrap gap-4 lg:gap-6">
             {/* Luxury car brand logos */}
-            <div className="flex flex-wrap gap-6">
+            <div className="flex flex-wrap gap-3 lg:gap-4">
               {['BMW', 'Mercedes', 'Porsche', 'Audi', 'Land Rover'].map((brand) => (
                 <div 
                   key={brand} 
-                  className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg text-white font-medium text-sm transition-transform hover:scale-105"
+                  className="bg-white/10 backdrop-blur-sm px-3 py-2 lg:px-4 lg:py-2 rounded-lg text-white font-medium text-sm transition-transform hover:scale-105"
                 >
                   {brand}
                 </div>
