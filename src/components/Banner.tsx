@@ -37,16 +37,16 @@ const Banner = () => {
           <div
             key={image}
             className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
-              index === currentImageIndex ? 'opacity-70' : 'opacity-0'
+              index === currentImageIndex ? 'opacity-40' : 'opacity-0'
             }`}
             style={{ backgroundImage: `url(${image})` }}
           />
         ))}
-        <div className="absolute inset-0 bg-gradient-to-r from-usanavy/90 via-usanavy/80 to-usablue/70 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-usanavy/60 via-usanavy/50 to-usablue/40 z-10"></div>
         {/* Background effect with patriotic elements */}
-        <div className="absolute inset-0 opacity-20 z-0">
-          <div className="absolute -right-16 top-20 w-80 h-80 rounded-full bg-usared/30 blur-3xl animate-float"></div>
-          <div className="absolute left-40 bottom-20 w-60 h-60 rounded-full bg-usablue/30 blur-3xl animate-float" style={{ animationDelay: "2s" }}></div>
+        <div className="absolute inset-0 opacity-30 z-0">
+          <div className="absolute -right-16 top-20 w-80 h-80 rounded-full bg-usared/40 blur-3xl animate-float"></div>
+          <div className="absolute left-40 bottom-20 w-60 h-60 rounded-full bg-usablue/40 blur-3xl animate-float" style={{ animationDelay: "2s" }}></div>
         </div>
       </div>
       
@@ -92,7 +92,7 @@ const Banner = () => {
               ].map((brand) => (
                 <div 
                   key={brand} 
-                  className="bg-white/10 backdrop-blur-sm px-3 py-2 lg:px-4 lg:py-2 rounded-lg text-white font-medium text-sm transition-transform hover:scale-105"
+                  className="bg-white/20 backdrop-blur-sm px-3 py-2 lg:px-4 lg:py-2 rounded-lg text-white font-medium text-sm transition-transform hover:scale-105"
                 >
                   {brand}
                 </div>

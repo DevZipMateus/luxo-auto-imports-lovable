@@ -17,7 +17,7 @@ const Header = () => {
               <img 
                 src="/lovable-uploads/07606789-617c-474a-984b-5aae0432ac4a.png"
                 alt="Trade Imports Logo" 
-                className="h-12 md:h-14" 
+                className="h-16 md:h-20 lg:h-24" 
               />
             </Link>
           </div>
