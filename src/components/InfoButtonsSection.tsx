@@ -16,12 +16,12 @@ const InfoButtonsSection = () => {
   return (
     <div className="bg-tradedark py-3">
       <div className="container mx-auto px-4">
-        <div className="flex flex-wrap justify-center gap-2 md:gap-4">
+        <div className="flex flex-wrap justify-center gap-1 md:gap-2 lg:gap-3 xl:gap-4">
           {infoButtons.map((button, index) => (
             <Link
               key={index}
               to={button.route}
-              className="text-white text-xs md:text-sm font-medium px-3 py-2 hover:text-tradeblue transition-colors duration-300 whitespace-nowrap"
+              className="text-white text-xs md:text-sm font-medium px-2 md:px-3 py-2 hover:text-tradeblue transition-colors duration-300 whitespace-nowrap flex-shrink-0"
             >
               {button.label}
             </Link>
