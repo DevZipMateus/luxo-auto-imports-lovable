@@ -14,7 +14,7 @@ const InfoButtonsSection = () => {
   ];
 
   return (
-    <div className="bg-tradedark py-3">
+    <div className="bg-usablue py-3">
       <div className="container mx-auto px-4">
         <div className="flex justify-center overflow-x-auto scrollbar-hide">
           <div className="flex gap-1 md:gap-2 lg:gap-3 xl:gap-4 min-w-max">
@@ -22,7 +22,7 @@ const InfoButtonsSection = () => {
               <Link
                 key={index}
                 to={button.route}
-                className="text-white text-xs md:text-sm font-medium px-2 md:px-3 py-2 hover:text-tradeblue transition-colors duration-300 whitespace-nowrap flex-shrink-0"
+                className="text-white text-xs md:text-sm font-medium px-2 md:px-3 py-2 hover:text-usasilver transition-colors duration-300 whitespace-nowrap flex-shrink-0"
               >
                 {button.label}
               </Link>

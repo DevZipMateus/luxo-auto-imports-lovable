@@ -1,4 +1,3 @@
-
 import React from "react";
 import Layout from "@/components/Layout";
 import { Truck, Package, Clock, Globe, FileText, Handshake } from "lucide-react";
@@ -7,10 +6,10 @@ import { Button } from "@/components/ui/button";
 const Import = () => {
   return (
     <Layout>
-      <div className="bg-gradient-to-b from-tradedark to-black text-white">
+      <div className="bg-gradient-to-b from-usablue to-usablue-dark text-white">
         <div className="container mx-auto px-4 py-16">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-12 relative 
-                     after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-24 after:h-1 after:bg-tradeblue
+                     after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-24 after:h-1 after:bg-usared
                      pb-4">
             Importadora de peças automotivas
           </h1>
@@ -25,9 +24,9 @@ const Import = () => {
               </p>
             </div>
             
-            <div className="bg-white/5 backdrop-blur-sm p-8 rounded-lg border border-tradeblue/20 flex items-center">
+            <div className="bg-white/5 backdrop-blur-sm p-8 rounded-lg border border-usared/20 flex items-center">
               <div className="mr-6">
-                <Globe className="text-tradeblue h-16 w-16" />
+                <Globe className="text-usared h-16 w-16" />
               </div>
               <div>
                 <h3 className="text-2xl font-semibold mb-2 text-white">Presença Global</h3>
@@ -70,9 +69,9 @@ const Import = () => {
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-              <div className="bg-white/5 backdrop-blur-sm p-6 rounded-lg border border-tradeblue/20 hover:border-tradeblue/40 transition-all">
-                <div className="bg-tradeblue/20 p-3 rounded-full w-fit mb-4">
-                  <Clock className="text-tradeblue" />
+              <div className="bg-white/5 backdrop-blur-sm p-6 rounded-lg border border-usared/20 hover:border-usared/40 transition-all">
+                <div className="bg-usared/20 p-3 rounded-full w-fit mb-4">
+                  <Clock className="text-usared" />
                 </div>
                 <h3 className="text-xl font-medium mb-3 text-white">Entrega Rápida</h3>
                 <p className="text-gray-300">
@@ -80,9 +79,9 @@ const Import = () => {
                 </p>
               </div>
               
-              <div className="bg-white/5 backdrop-blur-sm p-6 rounded-lg border border-tradeblue/20 hover:border-tradeblue/40 transition-all">
-                <div className="bg-tradeblue/20 p-3 rounded-full w-fit mb-4">
-                  <Package className="text-tradeblue" />
+              <div className="bg-white/5 backdrop-blur-sm p-6 rounded-lg border border-usared/20 hover:border-usared/40 transition-all">
+                <div className="bg-usared/20 p-3 rounded-full w-fit mb-4">
+                  <Package className="text-usared" />
                 </div>
                 <h3 className="text-xl font-medium mb-3 text-white">Armazenamento Seguro</h3>
                 <p className="text-gray-300">
@@ -90,9 +89,9 @@ const Import = () => {
                 </p>
               </div>
               
-              <div className="bg-white/5 backdrop-blur-sm p-6 rounded-lg border border-tradeblue/20 hover:border-tradeblue/40 transition-all">
-                <div className="bg-tradeblue/20 p-3 rounded-full w-fit mb-4">
-                  <Truck className="text-tradeblue" />
+              <div className="bg-white/5 backdrop-blur-sm p-6 rounded-lg border border-usared/20 hover:border-usared/40 transition-all">
+                <div className="bg-usared/20 p-3 rounded-full w-fit mb-4">
+                  <Truck className="text-usared" />
                 </div>
                 <h3 className="text-xl font-medium mb-3 text-white">Distribuição Nacional</h3>
                 <p className="text-gray-300">
@@ -116,12 +115,12 @@ const Import = () => {
             </div>
           </div>
           
-          <div className="bg-tradeblue/10 p-8 rounded-lg border border-tradeblue/30 text-center">
+          <div className="bg-usared/10 p-8 rounded-lg border border-usared/30 text-center">
             <div className="flex items-center justify-center mb-4">
-              <FileText className="text-tradeblue mr-2" />
+              <FileText className="text-usared mr-2" />
               <h3 className="text-xl font-semibold text-white">Deseja obter mais informações sobre a importação de autopeças?</h3>
             </div>
-            <Button className="bg-tradeblue hover:bg-tradeblue-dark text-white mt-2">Fale Conosco!</Button>
+            <Button className="bg-usared hover:bg-usared-dark text-white mt-2">Fale Conosco!</Button>
           </div>
         </div>
       </div>
