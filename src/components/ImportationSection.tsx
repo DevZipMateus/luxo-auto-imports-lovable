@@ -5,8 +5,17 @@ import { Button } from "@/components/ui/button";
 
 const ImportationSection = () => {
   return (
-    <section className="py-16 bg-gradient-to-br from-tradedark to-black text-white">
-      <div className="container mx-auto px-4">
+    <section className="py-16 bg-gradient-to-br from-tradedark to-black text-white relative overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 opacity-10 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/lovable-uploads/22b376b8-8f51-417c-9eef-bb797a29290f.png')"
+        }}
+      />
+      
+      {/* Content */}
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-6 text-white relative 
                      after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-1 after:bg-tradeblue
