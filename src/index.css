@@ -121,4 +121,13 @@
     @apply px-6 py-2 border-2 border-usablue text-usablue rounded hover:bg-usablue/10 
            transition-colors duration-300 font-medium;
   }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 }
