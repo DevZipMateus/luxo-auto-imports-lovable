@@ -56,6 +56,15 @@ const Banner = () => {
             <Button className="bg-transparent border-2 border-white text-white hover:bg-white/10 transition-colors">
               Confira Nossos Produtos
             </Button>
+            <a 
+              href="https://www.tradeimports.com.br/loja2/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-tradeblue text-white hover:bg-tradeblue/90 transition-colors">
+                Acesse Nossa Loja
+              </Button>
+            </a>
           </div>
           
           <div className="mt-12 flex flex-wrap gap-6">
