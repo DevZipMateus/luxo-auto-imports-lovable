@@ -93,8 +93,8 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p>© 2025 Trade Imports. Todos os direitos reservados.</p>
             <div className="flex space-x-4 mt-4 md:mt-0">
-              <a href="#" className="hover:text-tradeblue transition-colors">Termos de Uso</a>
-              <a href="#" className="hover:text-tradeblue transition-colors">Política de Privacidade</a>
+              <Link to="/termos-uso" className="hover:text-tradeblue transition-colors">Termos de Uso</Link>
+              <Link to="/politica-privacidade" className="hover:text-tradeblue transition-colors">Política de Privacidade</Link>
             </div>
           </div>
         </div>
