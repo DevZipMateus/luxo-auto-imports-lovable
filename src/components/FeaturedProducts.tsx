@@ -10,16 +10,16 @@ const FeaturedProducts = () => {
       name: "Válvula Termostática do Mini Cooper",
       description: "Válvula termostática original para Mini Cooper, garantindo controle preciso da temperatura do motor",
       image: "/lovable-uploads/produto1.jpg",
-      price: "R$ 285,00",
+      price: "R$ 999,99",
       category: "Motor"
     },
     {
       id: 2,
-      name: "Pastilha de Freio Dianteira BMW",
-      description: "Pastilhas de freio dianteiras para BMW X5 e X6, proporcionando máxima segurança e performance",
+      name: "Filtro de Óleo Jaguar Land Rover V8",
+      description: "Filtro de óleo de alta qualidade para motores V8 Jaguar Land Rover, garantindo máxima proteção",
       image: "/lovable-uploads/produto2.jpg",
-      price: "R$ 450,00",
-      category: "Freios"
+      price: "R$ 110,99",
+      category: "Motor"
     },
     {
       id: 3,
