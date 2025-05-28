@@ -35,7 +35,7 @@ const Clients = () => {
     { name: "Valeo", logo: "/lovable-uploads/marcas/Valeo.png", url: "https://www.valeo.com/pt-br/brasil/" },
     { name: "Volkswagen", logo: "/lovable-uploads/marcas/volks.jpg", url: "https://www.volkswagen.com" },
     { name: "Volvo", logo: "/lovable-uploads/marcas/volvo.jpg", url: "https://www.volvo.com" },
-    { name: "Aircraft", logo: "/lovable-uploads/marcas/aircraft.jpg", url: "https://www.aircraft.com" },
+    { name: "Aircraft", logo: "/lovable-uploads/marcas/aircraft.jpg", url: "https://www.aircraftspruce.com/" },
   ];
 
   return (
