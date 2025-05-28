@@ -9,8 +9,6 @@ const InfoButtonsSection = () => {
     { label: "PRAZOS DE ENTREGA", route: "/prazos-entrega" },
     { label: "TROCAS E DEVOLUÇÕES", route: "/trocas-devolucoes" },
     { label: "FORMAS DE PAGAMENTO", route: "/formas-pagamento" },
-    { label: "TERMOS DE USO", route: "/termos-uso" },
-    { label: "POLÍTICA DE PRIVACIDADE", route: "/politica-privacidade" },
   ];
 
   return (
