@@ -1,4 +1,3 @@
-
 import React from "react";
 import Layout from "@/components/Layout";
 import { Card } from "@/components/ui/card";
@@ -69,8 +68,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold text-tradedark">Horário de Funcionamento</h3>
                       <p className="text-gray-600">Segunda à Sexta: 8h às 18h</p>
-                      <p className="text-gray-600">Sábado: 8h às 12h</p>
-                      <p className="text-gray-600">Domingo: Fechado</p>
+                      <p className="text-gray-600">Sábado e Domingo: Fechado</p>
                     </div>
                   </div>
                 </div>
