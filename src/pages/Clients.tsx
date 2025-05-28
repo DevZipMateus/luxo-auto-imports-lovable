@@ -17,7 +17,7 @@ const Clients = () => {
     { name: "Corvette", logo: "/lovable-uploads/marcas/corvete.jpg", url: "https://www.chevrolet.com/performance/corvette" },
     { name: "Dodge", logo: "/lovable-uploads/marcas/dodge.png", url: "https://www.dodge.com" },
     { name: "Ferrari", logo: "/lovable-uploads/marcas/ferrari.png", url: "https://www.ferrari.com" },
-    { name: "Ford", logo: "/lovable-uploads/marcas/FORD.jpg", url: "https://www.ford.com.br/" },
+    { name: "Ford", logo: "/lovable-uploads/marcas/ford-logo-1.png", url: "https://www.ford.com.br/" },
     { name: "GMC", logo: "/lovable-uploads/marcas/gmc.jpg", url: "https://www.gmc.com" },
     { name: "Hella", logo: "/lovable-uploads/marcas/hella.png", url: "https://www.hella.com" },
     { name: "Hummer", logo: "/lovable-uploads/marcas/hummer.png", url: "https://www.gmc.com/electric/hummer-ev" },
