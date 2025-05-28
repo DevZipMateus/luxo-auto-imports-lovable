@@ -1,4 +1,3 @@
-
 import React from "react";
 import Layout from "@/components/Layout";
 import { Card } from "@/components/ui/card";
@@ -11,12 +10,14 @@ const Clients = () => {
     { name: "Audi", logo: "/lovable-uploads/marcas/audi.png", url: "https://www.audi.com" },
     { name: "Bentley", logo: "/lovable-uploads/marcas/bentley.jpg", url: "https://www.bentleymotors.com" },
     { name: "BMW", logo: "/lovable-uploads/marcas/bmw.png", url: "https://www.bmw.com" },
+    { name: "Bosch", logo: "/lovable-uploads/marcas/Bosch.png", url: "https://www.bosch.com.br/" },
     { name: "Bugatti", logo: "/lovable-uploads/marcas/bugatti.png", url: "https://www.bugatti.com" },
     { name: "Cadillac", logo: "/lovable-uploads/marcas/cadillac.jpg", url: "https://www.cadillac.com" },
     { name: "Chrysler", logo: "/lovable-uploads/marcas/chrysler.jpg", url: "https://www.chrysler.com" },
     { name: "Corvette", logo: "/lovable-uploads/marcas/corvete.jpg", url: "https://www.chevrolet.com/performance/corvette" },
     { name: "Dodge", logo: "/lovable-uploads/marcas/dodge.png", url: "https://www.dodge.com" },
     { name: "Ferrari", logo: "/lovable-uploads/marcas/ferrari.png", url: "https://www.ferrari.com" },
+    { name: "Ford", logo: "/lovable-uploads/marcas/FORD.jpg", url: "https://www.ford.com.br/" },
     { name: "GMC", logo: "/lovable-uploads/marcas/gmc.jpg", url: "https://www.gmc.com" },
     { name: "Hella", logo: "/lovable-uploads/marcas/hella.png", url: "https://www.hella.com" },
     { name: "Hummer", logo: "/lovable-uploads/marcas/hummer.png", url: "https://www.gmc.com/electric/hummer-ev" },
@@ -31,9 +32,9 @@ const Clients = () => {
     { name: "Mustang", logo: "/lovable-uploads/marcas/mustang.jpg", url: "https://www.ford.com/cars/mustang" },
     { name: "Pontiac", logo: "/lovable-uploads/marcas/pontic.png", url: "https://www.gm.com" },
     { name: "Porsche", logo: "/lovable-uploads/marcas/porsche.jpg", url: "https://www.porsche.com" },
+    { name: "Valeo", logo: "/lovable-uploads/marcas/Valeo.png", url: "https://www.valeo.com/pt-br/brasil/" },
     { name: "Volkswagen", logo: "/lovable-uploads/marcas/volks.jpg", url: "https://www.volkswagen.com" },
     { name: "Volvo", logo: "/lovable-uploads/marcas/volvo.jpg", url: "https://www.volvo.com" },
-    { name: "Wunder", logo: "/lovable-uploads/marcas/wunder.png", url: "https://www.wunder.com" },
     { name: "Aircraft", logo: "/lovable-uploads/marcas/aircraft.jpg", url: "https://www.aircraft.com" },
   ];
 
