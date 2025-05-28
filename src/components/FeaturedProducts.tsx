@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -23,18 +22,18 @@ const FeaturedProducts = () => {
     },
     {
       id: 3,
-      name: "Filtro de Ar BMW X5",
-      description: "Filtro de ar de alta qualidade para BMW X5, garantindo melhor performance do motor",
+      name: "Farol Mercedes AMG C43 C45 Lado Esquerdo",
+      description: "Farol original lado esquerdo para Mercedes AMG C43 e C45, garantindo máxima qualidade e durabilidade",
       image: "/lovable-uploads/produto3.jpg",
-      price: "R$ 120,00",
-      category: "Motor"
+      price: "R$ 8.499,99",
+      category: "Iluminação"
     },
     {
       id: 4,
-      name: "Amortecedor Traseiro Land Rover",
-      description: "Amortecedor traseiro original para Land Rover Discovery 3 e 4, oferecendo conforto e estabilidade",
+      name: "Cubo Da Roda Dianteira do Volvo",
+      description: "Cubo da roda dianteira original para Volvo, oferecendo máxima segurança e performance",
       image: "/lovable-uploads/produto4.jpg",
-      price: "R$ 1.250,00",
+      price: "R$ 899,99",
       category: "Suspensão"
     }
   ];
