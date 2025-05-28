@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -6,35 +7,35 @@ const FeaturedProducts = () => {
   const products = [
     {
       id: 1,
-      name: "Sistema de Suspensão BMW",
-      description: "Suspensão pneumática de alta performance para modelos BMW Série 7",
+      name: "Válvula Termostática do Mini Cooper",
+      description: "Válvula termostática original para Mini Cooper, garantindo controle preciso da temperatura do motor",
       image: "/lovable-uploads/produto1.jpg",
-      price: "R$ 2.850,00",
-      category: "Suspensão"
+      price: "R$ 285,00",
+      category: "Motor"
     },
     {
       id: 2,
-      name: "Pastilha de Freio Porsche",
-      description: "Pastilhas de freio originais para Porsche 911 Turbo",
+      name: "Pastilha de Freio Dianteira BMW",
+      description: "Pastilhas de freio dianteiras para BMW X5 e X6, proporcionando máxima segurança e performance",
       image: "/lovable-uploads/produto2.jpg",
-      price: "R$ 890,00",
+      price: "R$ 450,00",
       category: "Freios"
     },
     {
       id: 3,
-      name: "Filtro de Ar Mercedes",
-      description: "Filtro de ar de alta eficiência para Mercedes-Benz Classe S",
+      name: "Filtro de Ar BMW X5",
+      description: "Filtro de ar de alta qualidade para BMW X5, garantindo melhor performance do motor",
       image: "/lovable-uploads/produto3.jpg",
-      price: "R$ 320,00",
+      price: "R$ 120,00",
       category: "Motor"
     },
     {
       id: 4,
-      name: "Sensor ABS Audi",
-      description: "Sensor de velocidade ABS para Audi A8 e Q7",
+      name: "Amortecedor Traseiro Land Rover",
+      description: "Amortecedor traseiro original para Land Rover Discovery 3 e 4, oferecendo conforto e estabilidade",
       image: "/lovable-uploads/produto4.jpg",
-      price: "R$ 450,00",
-      category: "Eletrônicos"
+      price: "R$ 1.250,00",
+      category: "Suspensão"
     }
   ];
 
