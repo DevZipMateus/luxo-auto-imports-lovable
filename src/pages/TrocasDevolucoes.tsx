@@ -1,8 +1,7 @@
-
 import React from "react";
 import Layout from "@/components/Layout";
 import { Card } from "@/components/ui/card";
-import { RefreshCw, Phone, AlertCircle, CheckCircle } from "lucide-react";
+import { RefreshCw, Mail, AlertCircle, CheckCircle } from "lucide-react";
 
 const TrocasDevolucoes = () => {
   return (
@@ -52,13 +51,13 @@ const TrocasDevolucoes = () => {
           {/* Como obter autorização */}
           <Card className="p-8 bg-white mb-8">
             <div className="flex items-center mb-6">
-              <Phone className="text-tradeblue mr-3" size={32} />
+              <Mail className="text-tradeblue mr-3" size={32} />
               <h2 className="text-2xl font-semibold text-tradedark">
                 Como Obter a Autorização para Retorno de Mercadoria
               </h2>
             </div>
             <p className="text-gray-600 leading-relaxed">
-              O cliente poderá solicitar troca ou devolução pelos telefones <strong>(011) 4198-6237</strong> e/ou <strong>(11) 4198-0937</strong>.
+              O cliente poderá solicitar troca ou devolução pelo nosso e-mail <strong>contato@tradeimports.com.br</strong>.
             </p>
           </Card>
 
