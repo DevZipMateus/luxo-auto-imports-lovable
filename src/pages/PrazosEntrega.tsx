@@ -76,7 +76,7 @@ const PrazosEntrega = () => {
               </h2>
             </div>
             <p className="text-gray-600 leading-relaxed">
-              Efetuamos importação de peças em tempo recorde <strong>"prazo médio 5 á 10 dias úteis no Brasil"</strong>, através de nosso DEALER na América e Europa. *prazo previsto poderá exceder em caso de interferência alfandegária de Receita Federal.
+              Efetuamos importação de peças em tempo recorde <strong>"prazo médio 15 á 20 dias úteis no Brasil"</strong>, através de nosso DEALER na América e Europa. *prazo previsto poderá exceder em caso de interferência alfandegária de Receita Federal.
             </p>
           </Card>
 
