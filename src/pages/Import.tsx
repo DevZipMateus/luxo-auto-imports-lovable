@@ -14,6 +14,35 @@ const Import = () => {
             Importadora de peças automotivas
           </h1>
           
+          {/* Seção Importamos Diretamente De */}
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 mb-16 border border-white/20">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-white text-center">
+              Importamos Diretamente De
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="text-center bg-white/5 p-6 rounded-lg border border-usared/20 hover:border-usared/40 transition-all">
+                <div className="text-4xl mb-3">🇺🇸</div>
+                <h3 className="font-semibold text-white mb-2">Estados Unidos</h3>
+                <p className="text-sm text-gray-300">Peças originais e OEM</p>
+              </div>
+              <div className="text-center bg-white/5 p-6 rounded-lg border border-usared/20 hover:border-usared/40 transition-all">
+                <div className="text-4xl mb-3">🇩🇪</div>
+                <h3 className="font-semibold text-white mb-2">Alemanha</h3>
+                <p className="text-sm text-gray-300">Tecnologia alemã</p>
+              </div>
+              <div className="text-center bg-white/5 p-6 rounded-lg border border-usared/20 hover:border-usared/40 transition-all">
+                <div className="text-4xl mb-3">🇹🇷</div>
+                <h3 className="font-semibold text-white mb-2">Turquia</h3>
+                <p className="text-sm text-gray-300">Peças de qualidade</p>
+              </div>
+              <div className="text-center bg-white/5 p-6 rounded-lg border border-usared/20 hover:border-usared/40 transition-all">
+                <div className="text-4xl mb-3">🇬🇧</div>
+                <h3 className="font-semibold text-white mb-2">Inglaterra</h3>
+                <p className="text-sm text-gray-300">Tradição britânica</p>
+              </div>
+            </div>
+          </div>
+          
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
             <div className="text-lg text-gray-200 space-y-6">
               <p>
