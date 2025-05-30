@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -7,17 +6,18 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import AboutUs from "./pages/AboutUs";
 import Import from "./pages/Import";
-import Clients from "./pages/Clients";
 import Catalogs from "./pages/Catalogs";
+import Clients from "./pages/Clients";
 import Contact from "./pages/Contact";
-import HowToBuy from "./pages/HowToBuy";
-import FormasEntrega from "./pages/FormasEntrega";
-import PrazosEntrega from "./pages/PrazosEntrega";
-import TrocasDevolucoes from "./pages/TrocasDevolucoes";
-import FormasPagamento from "./pages/FormasPagamento";
+import NotFound from "./pages/NotFound";
 import TermosUso from "./pages/TermosUso";
 import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
-import NotFound from "./pages/NotFound";
+import FormasPagamento from "./pages/FormasPagamento";
+import FormasEntrega from "./pages/FormasEntrega";
+import TrocasDevolucoes from "./pages/TrocasDevolucoes";
+import HowToBuy from "./pages/HowToBuy";
+import PrazosEntrega from "./pages/PrazosEntrega";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -27,12 +27,13 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/sobre-nos" element={<AboutUs />} />
           <Route path="/importacao" element={<Import />} />
-          <Route path="/clientes" element={<Clients />} />
           <Route path="/catalogos" element={<Catalogs />} />
+          <Route path="/clientes" element={<Clients />} />
           <Route path="/contato" element={<Contact />} />
           <Route path="/como-comprar" element={<HowToBuy />} />
           <Route path="/formas-entrega" element={<FormasEntrega />} />
