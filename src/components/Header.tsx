@@ -1,7 +1,6 @@
 
 import React, { useState } from "react";
 import { Menu, Phone, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -65,13 +64,6 @@ const Header = () => {
             <Link to="/clientes" className="nav-link">Clientes</Link>
             <Link to="/catalogos" className="nav-link">Catálogos</Link>
             <Link to="/contato" className="nav-link">Contato</Link>
-            <a 
-              href="https://www.tradeimports.com.br/loja2/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              <Button className="btn-primary text-sm">Loja Virtual</Button>
-            </a>
           </nav>
           
           {/* Mobile Menu Button */}
@@ -105,14 +97,6 @@ const Header = () => {
               <Link to="/contato" className="nav-link">Contato</Link>
               
               <div className="flex flex-col space-y-3 pt-2">
-                <a 
-                  href="https://www.tradeimports.com.br/loja2/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  <Button className="btn-primary w-full">Loja Virtual</Button>
-                </a>
-                
                 <div className="flex items-center gap-2 pt-2">
                   <Phone size={18} className="text-usablue" />
                   <a href="tel:+551141986237" className="text-sm hover:text-usablue transition-colors">

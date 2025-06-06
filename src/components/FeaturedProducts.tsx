@@ -1,6 +1,6 @@
+
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 
 const FeaturedProducts = () => {
   const products = [
@@ -56,9 +56,8 @@ const FeaturedProducts = () => {
                   className="w-full h-48 object-cover rounded-md mb-4"
                 />
                 <p className="text-sm text-gray-700 mb-4">{product.description}</p>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-center">
                   <span className="text-xl font-bold text-usablue">{product.price}</span>
-                  <Button className="btn-primary">Ver Detalhes</Button>
                 </div>
               </CardContent>
             </Card>
